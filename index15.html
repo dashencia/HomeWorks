@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats gallery</title>
+    <link rel="stylesheet" href="/JS/HomeWorks/assets/style.css" />
+    <link rel="shortcut icon" href="/JS/HomeWorks/assets/images/happy.png" />
+
+    <script>
+      function changeImg() {
+        let image = document.getElementById("cat");
+        image.src = "/JS/HomeWorks/assets/images/kittie1.jpg";
+      }
+
+      function changeImg2() {
+        let image = document.getElementById("cat");
+        image.src = "/JS/HomeWorks/assets/images/kittie2.jpg";
+      }
+    </script>
+  </head>
+
+  <body>
+    <button onclick="changeImg()" class="button">Previous</button>
+    <img
+      src="/JS/HomeWorks/assets/images/kittie2.jpg"
+      id="cat"
+      class="images"
+      alt="cat"
+    />
+
+    <button onclick="changeImg2()" class="button1">Next</button>
+  </body>
+</html>
